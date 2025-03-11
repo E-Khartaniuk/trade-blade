@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Numbers from "./components/Numbers/Numbers";
 import PastTransactions from "./components/PastTransactions/PastTransactions";
+import Price from "./components/Price/Price";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Numbers />
         <PastTransactions />
         <About />
+        <Price />
       </main>
       {/* <footer>
         <p>© 2025 Назва компанії</p>

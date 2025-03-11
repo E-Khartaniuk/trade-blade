@@ -1,0 +1,94 @@
+.priceSection {
+  background: #030718;
+  padding-top: 220px;
+}
+.priceContainer {
+  width: 375px;
+  margin: 0 auto;
+}
+.title {
+  color: #fff;
+
+  font-feature-settings: "case" on, "ss04" on;
+  font-family: "IBM Plex Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+}
+
+.variantContainer {
+  padding: 4px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 413px;
+
+  border-radius: 4px;
+  background: rgba(105, 82, 255, 0.4);
+  display: flex;
+  justify-content: space-between;
+}
+.buttonSPOT {
+  width: 200px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background-color: #57e1ff;
+  color: #000;
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+.buttonFutures {
+  width: 200px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  text-align: center;
+
+  color: var(--Q, #57e1ff);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+.buttonFutures:hover {
+  border: 1px solid #57e1ff;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 1440px) {
+  .priceSection {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .title {
+    font-size: 44px;
+    line-height: 36px; /* 128.571% */
+    letter-spacing: -1.12px;
+  }
+  .priceContainer {
+    width: 850px;
+  }
+  .cardsContainer {
+    flex-direction: row;
+    margin-top: 44px;
+  }
+
+  .variantContainer {
+    margin-top: 40px;
+  }
+}
