@@ -1,0 +1,215 @@
+.about {
+  position: relative;
+  width: 375px;
+  margin: 0 auto;
+  padding: 24px 16px 132px 16px;
+}
+
+.descriptionContainer {
+  width: 100%;
+}
+.title {
+  position: relative;
+  color: #030718;
+  margin-bottom: 20px;
+
+  font-feature-settings: "case" on, "ss04" on;
+  font-family: "IBM Plex Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 128.571% */
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.description {
+  color: #030718;
+
+  font-feature-settings: "ss04" on;
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  opacity: 0.8;
+}
+.descriptionContainer p:last-child {
+  margin-top: 16px;
+}
+
+.formContainer {
+  width: 343px;
+  height: 218px;
+  border-radius: 4px;
+  background: var(--purple, #6a54ff);
+
+  padding: 16px;
+  top: 320px;
+  position: absolute;
+}
+
+.aboutFormTitle {
+  color: #fff;
+
+  text-align: center;
+  font-family: "IBM Plex Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.8px;
+}
+.heroInput {
+  margin-top: 20px;
+  padding: 16px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+
+  opacity: 0.3;
+  background: #000;
+}
+
+.heroInput::placeholder {
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.14px;
+  text-transform: uppercase;
+  opacity: 0.34;
+  padding: 15px 242px 15px 16px;
+}
+.heroButton {
+  padding: 16px 24px;
+  margin-top: 8px;
+  width: 260px;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 3px;
+  border: 1px solid var(--Q, #57e1ff);
+  background: var(--Q, #57e1ff);
+  box-shadow: 0px 0px 4px 0px #57e1ff;
+
+  color: #030718;
+  font-feature-settings: "ss04" on;
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  text-transform: uppercase;
+}
+
+.mobilePlug {
+  background-image: url("../../img/mobilePlug.svg");
+
+  width: 267px;
+  height: 82px;
+
+  position: absolute;
+  top: -24px;
+  left: 0px;
+  z-index: 1;
+}
+
+.mobilePlug::before {
+  content: " ";
+  position: absolute;
+  width: 1400px;
+  height: 25px;
+
+  left: -1399px;
+
+  background-color: white;
+}
+
+@media (min-width: 1440px) {
+  .about {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 56px 80px 132px 80px;
+    display: flex;
+    gap: 238px;
+  }
+
+  .descriptionContainer {
+    width: 413px;
+  }
+
+  .formContainer {
+    width: 630px;
+    height: 244px;
+    margin-top: 36px;
+
+    position: relative;
+    top: 0;
+  }
+  .aboutFormTitle {
+    font-size: 28px;
+    line-height: 36px; /* 128.571% */
+    letter-spacing: -1.12px;
+  }
+
+  .heroInput {
+    margin-top: 32px;
+    margin-left: 64px;
+    padding: 16px;
+    color: white;
+    width: 468px;
+    height: 60px;
+    border-radius: 4px;
+
+    background: #4a3bb3;
+  }
+
+  .heroInput::placeholder {
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.14px;
+    text-transform: uppercase;
+    opacity: 0.34;
+    padding: 15px 242px 15px 16px;
+  }
+
+  .heroButton {
+    padding: 16px 24px;
+    width: 117px;
+    position: absolute;
+    top: 115px;
+    right: 85px;
+  }
+
+  .title {
+    font-size: 44px;
+    line-height: 56px; /* 127.273% */
+    letter-spacing: -1.76px;
+  }
+
+  .mobilePlug {
+    background-image: url(../../img/desktopplug.svg);
+    width: 639px;
+    height: 60px;
+    top: -60px;
+
+    flex-shrink: 0;
+  }
+
+  .mobilePlug::before {
+    content: " ";
+    position: absolute;
+    width: 1400px;
+    height: 60px;
+
+    left: -1399px;
+  }
+}

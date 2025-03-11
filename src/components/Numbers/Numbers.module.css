@@ -1,0 +1,154 @@
+.numbers {
+  display: block;
+  position: relative;
+  width: 375px;
+  margin: 0 auto;
+  padding: 24px 16px 48px 16px;
+}
+
+.numbersTitle {
+  position: relative;
+
+  color: #000;
+  font-feature-settings: "case" on, "ss04" on;
+  font-family: "IBM Plex Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 128.571% */
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.subtitle {
+  color: #000;
+  font-variant-numeric: slashed-zero;
+  font-feature-settings: "case" on, "ss04" on;
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.56px;
+
+  opacity: 0.5;
+}
+
+.metricList {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  column-gap: 65px;
+
+  margin-top: 40px;
+}
+.metricItem {
+  width: 135px;
+  /* flex: 1;  
+  flex-basis: 100px;  
+  max-width: 120px;  */
+}
+
+.metricName {
+  color: #000;
+  font-feature-settings: "ss04" on;
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.metricValue {
+  color: var(--purple, #6a54ff);
+  font-family: "IBM Plex Sans";
+  font-variant-numeric: slashed-zero;
+  font-feature-settings: "case" on, "ss04" on;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 38.5px */
+  letter-spacing: -0.7px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.mobilePlug {
+  background-image: url("../../img/mobilePlug.svg");
+
+  width: 267px;
+  height: 82px;
+
+  position: absolute;
+  top: -24px;
+  left: 0px;
+  z-index: 1;
+}
+
+.mobilePlug::before {
+  content: " ";
+  position: absolute;
+  width: 1400px;
+  height: 25px;
+
+  left: -1399px;
+
+  background-color: white;
+}
+
+@media (min-width: 1440px) {
+  .numbers {
+    width: 1440px;
+    padding: 92px 80px 60px;
+    display: flex;
+  }
+  .mobilePlug {
+    background-image: url(../../img/desktopplug.svg);
+    width: 639px;
+    height: 60px;
+    top: -60px;
+
+    flex-shrink: 0;
+  }
+
+  .mobilePlug::before {
+    content: " ";
+    position: absolute;
+    width: 1400px;
+    height: 60px;
+
+    left: -1399px;
+  }
+
+  .metricList {
+    margin-top: 0;
+    margin-left: 157px;
+    gap: unset;
+  }
+
+  .metricList > :nth-child(1) {
+    margin-right: 129px;
+  }
+  .metricList > :nth-child(2) {
+    margin-right: 74px;
+  }
+  .metricItem {
+    width: auto;
+  }
+  .metricValue {
+    font-size: 60px;
+    letter-spacing: -1.2px;
+  }
+
+  .numbersTitle {
+    font-size: 44px;
+
+    line-height: 56px; /* 127.273% */
+    letter-spacing: -1.76px;
+  }
+
+  .subtitle {
+    margin-top: 4px;
+  }
+}

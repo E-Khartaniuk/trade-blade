@@ -34,8 +34,21 @@ a {
   text-decoration: none;
   color: black;
 }
+h1,
+h1,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+}
 
 :root {
   --white: #fff;
   --borderColor: #57e1ff;
+  --purple: #6a54ff;
 }
