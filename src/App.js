@@ -1,10 +1,12 @@
 import "./App.css";
 import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Numbers from "./components/Numbers/Numbers";
 import PastTransactions from "./components/PastTransactions/PastTransactions";
 import Price from "./components/Price/Price";
+import Questions from "./components/Questions/Questions";
 
 function App() {
   return (
@@ -16,10 +18,9 @@ function App() {
         <PastTransactions />
         <About />
         <Price />
+        <Questions />
       </main>
-      {/* <footer>
-        <p>© 2025 Назва компанії</p>
-      </footer> */}
+      <Footer />
     </>
   );
 }

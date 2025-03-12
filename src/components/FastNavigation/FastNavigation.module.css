@@ -1,0 +1,37 @@
+.fastNavigationSection {
+  display: flex;
+  padding-bottom: 56px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.title {
+  margin-right: 74px;
+  width: 107px;
+  color: #fff;
+
+  font-feature-settings: "ss04" on;
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.navListLink {
+  color: var(--white, #fff);
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
+}

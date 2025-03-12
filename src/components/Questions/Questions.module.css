@@ -1,0 +1,135 @@
+.questionsSection {
+  width: 375px;
+  margin: 0 auto;
+  padding: 56px 16px 54px;
+}
+.title {
+  color: #030718;
+
+  font-feature-settings: "case" on, "ss04" on;
+  font-family: "IBM Plex Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 128.571% */
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+}
+
+/* ++++++++++++++++++ */
+
+.faqSection {
+  max-width: 343px;
+  margin: 0 auto;
+}
+
+.questionsList {
+  margin-top: 40px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.questionsItem {
+  padding: 16px;
+  width: 343px;
+  border-radius: 4px;
+  background: #eaeff0;
+
+  flex-shrink: 0;
+  color: #030718;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.8px;
+}
+.markSelected {
+  background: var(--purple, #6a54ff);
+  color: var(--white, #fff);
+}
+.question {
+  width: 100%;
+  background: none;
+  border: none;
+
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: inherit;
+
+  font-family: "IBM Plex Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.8px;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+
+  opacity: 0;
+
+  color: var(--white, #fff);
+  font-feature-settings: "ss04" on;
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.answer > p:last-child {
+  margin-top: 12px;
+}
+
+.open {
+  max-height: fit-content;
+  opacity: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.arrowDown,
+.arrowUp {
+  transition: transform 0.3s;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+@media (min-width: 1440px) {
+  .questionsSection {
+    width: 846px;
+
+    padding: 96px 16px 96px;
+  }
+
+  .title {
+    font-size: 44px;
+    line-height: 56px; /* 127.273% */
+    letter-spacing: -1.76px;
+  }
+  .faqSection {
+    max-width: 846px;
+  }
+  .questionsList {
+    margin-top: 64px;
+  }
+  .questionsItem {
+    width: 814px;
+  }
+
+  .question {
+    font-size: 24px;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.96px;
+  }
+}

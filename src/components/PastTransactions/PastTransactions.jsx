@@ -5,7 +5,7 @@ import data from "../../data/data.json";
 
 function PastTransactions() {
   return (
-    <section className={css.pastTransactions}>
+    <section className={css.pastTransactions} id="pastTransactions">
       <div className={css.pastTransactionsContainer}>
         <h2 className={css.transactionsTitle}>Прошедшие сделки</h2>
         <p className={css.status}>Онлайн</p>

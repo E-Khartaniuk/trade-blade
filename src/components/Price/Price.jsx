@@ -5,7 +5,7 @@ import PriceCardVIP from "../PriceCards/PriceCardVIP";
 
 function Price() {
   return (
-    <section className={css.priceSection}>
+    <section className={css.priceSection} id="price">
       <div className={css.priceContainer}>
         <h2 className={css.title}>тарифы</h2>
         <div className={css.variantContainer}>

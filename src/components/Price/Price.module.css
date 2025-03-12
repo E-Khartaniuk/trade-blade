@@ -1,9 +1,12 @@
 .priceSection {
   background: #030718;
   padding-top: 220px;
+  padding-bottom: 44px;
 }
 .priceContainer {
   width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 .title {
@@ -21,17 +24,16 @@
 
 .variantContainer {
   padding: 4px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  width: 413px;
+
+  margin: 24px auto;
+  width: 346px;
 
   border-radius: 4px;
   background: rgba(105, 82, 255, 0.4);
   display: flex;
-  justify-content: space-between;
 }
 .buttonSPOT {
-  width: 200px;
+  width: 49%;
   height: 44px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -46,7 +48,7 @@
   text-transform: uppercase;
 }
 .buttonFutures {
-  width: 200px;
+  width: 49%;
   height: 44px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -90,5 +92,7 @@
 
   .variantContainer {
     margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

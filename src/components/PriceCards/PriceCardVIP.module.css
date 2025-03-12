@@ -1,8 +1,9 @@
 .priceVariantContainer {
-  width: 413px;
+  width: 343px;
   border-radius: 8px;
   border: 1px solid var(--purple, #6a54ff);
   background-color: var(--purple, #6a54ff);
+  margin: 0 auto;
 }
 .priceTitle {
   color: #fff;
@@ -143,7 +144,7 @@
   margin-bottom: 16px;
   margin-top: 26px;
   display: flex;
-  width: 294px;
+  width: 263px;
   height: 20px;
   padding: 16px 24px;
   flex-direction: column;
@@ -179,12 +180,15 @@
 }
 
 @media (min-width: 1440px) {
+  .priceVariantContainer {
+    width: 413px;
+  }
   .priceTitle {
     font-size: 32px;
     line-height: 48px; /* 150% */
     letter-spacing: -1.28px;
   }
   .tariffButton {
-    width: 332px;
+    width: 316px;
   }
 }

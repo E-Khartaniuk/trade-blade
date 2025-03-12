@@ -3,7 +3,7 @@ import css from "./Numbers.module.css";
 
 function Numbers() {
   return (
-    <section className={css.numbers}>
+    <section className={css.numbers} id="numbers">
       <div className={css.titlecontainer}>
         <h2 className={css.numbersTitle}>ЦИФРЫ</h2>
         <p className={css.subtitle}>Cентябрь 2022</p>
