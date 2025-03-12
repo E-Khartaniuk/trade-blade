@@ -38,13 +38,8 @@
 
   font-size: 16px;
 
-  line-height: 20px; /* 125% */
-  opacity: 0.8;
+  line-height: 20px;
 }
-
-/* .heroForm {
-  margin-top: 22px;
-} */
 
 .formContainer {
   position: relative;
@@ -97,6 +92,13 @@
   font-weight: 500;
   line-height: 20px; /* 142.857% */
   text-transform: uppercase;
+  transition: background-color 0.1s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transition: background-color 0.1s ease-in-out;
+    background-color: var(--buttonHover);
+  }
 }
 
 .heroDescriptionSecond {

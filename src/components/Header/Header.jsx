@@ -20,28 +20,12 @@ function Header() {
     };
   }, [isMenuOpen]);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setIsMenuOpen(false);
-      }
-    };
-
-    if (isMenuOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isMenuOpen]);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className={css.header}>
+    <header className={css.header} id="header">
       <div className={css.headerContainer}>
         <nav ref={menuRef} className={css.navigation}>
           <a href="/" className={css.logoLink}>
@@ -52,7 +36,7 @@ function Header() {
               <li className={css.navListitem}>
                 <a
                   className={css.navLink}
-                  href="#contact"
+                  href="#numbers"
                   onClick={() => setIsMenuOpen(false)}>
                   Цифры
                 </a>
@@ -60,7 +44,7 @@ function Header() {
               <li>
                 <a
                   className={css.navLink}
-                  href="#contact"
+                  href="#pastTransactions"
                   onClick={() => setIsMenuOpen(false)}>
                   Сделки онлайн
                 </a>
@@ -76,23 +60,16 @@ function Header() {
               <li>
                 <a
                   className={css.navLink}
-                  href="#contact"
+                  href="#price"
                   onClick={() => setIsMenuOpen(false)}>
                   тарифы
                 </a>
               </li>
+
               <li>
                 <a
                   className={css.navLink}
-                  href="#contact"
-                  onClick={() => setIsMenuOpen(false)}>
-                  отзывы
-                </a>
-              </li>
-              <li>
-                <a
-                  className={css.navLink}
-                  href="#contact"
+                  href="#questions"
                   onClick={() => setIsMenuOpen(false)}>
                   FAQ
                 </a>

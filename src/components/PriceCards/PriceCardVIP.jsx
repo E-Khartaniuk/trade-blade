@@ -81,6 +81,7 @@ function PriceCardVIP() {
                 className={css.menuItem}
                 onClick={() => {
                   setIsValue("3 месяца");
+                  setIsOpen(false);
                 }}>
                 3 месяца
               </li>
@@ -88,6 +89,7 @@ function PriceCardVIP() {
                 className={css.menuItem}
                 onClick={() => {
                   setIsValue("6 месяцев");
+                  setIsOpen(false);
                 }}>
                 6 месяцев
               </li>
@@ -95,6 +97,7 @@ function PriceCardVIP() {
                 className={css.menuItem}
                 onClick={() => {
                   setIsValue("9 месяцев");
+                  setIsOpen(false);
                 }}>
                 9 месяцев
               </li>
@@ -102,6 +105,7 @@ function PriceCardVIP() {
                 className={css.menuItem}
                 onClick={() => {
                   setIsValue("12 месяцев");
+                  setIsOpen(false);
                 }}>
                 12 месяцев
               </li>

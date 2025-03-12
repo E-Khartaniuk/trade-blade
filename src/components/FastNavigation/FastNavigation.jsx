@@ -5,7 +5,7 @@ function FastNavigation() {
   return (
     <section className={css.fastNavigationSection}>
       <h3 className={css.title}>Быстрая навигация</h3>
-      <nav>
+      <nav className={css.navigation}>
         <ul className={css.navList}>
           <li className={css.navListItem}>
             <a href="#numbers" className={css.navListLink}>

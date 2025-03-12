@@ -6,15 +6,18 @@ function Footer() {
   return (
     <footer className={css.footer}>
       <div className={css.footerContainer}>
-        <div>
+        <div className={css.fastNavigationContainer}>
           <FastNavigation />
         </div>
+        <div className={css.footerContent}>
+          <a href="#header" className={css.footerLogo} />
 
-        <div className={css.footerLogo}></div>
-        <span className={css.copyrite}>
-          © 2022 TradeBlade. All rights reserved
-        </span>
+          <span className={css.copyrite}>
+            © 2022 TradeBlade. All rights reserved
+          </span>
+        </div>
       </div>
+      <div className={css.bottomLine}></div>
     </footer>
   );
 }
