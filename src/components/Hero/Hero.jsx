@@ -7,9 +7,14 @@ function Hero() {
   return (
     <section className={css.hero}>
       <div className={css.heroContainer}>
-        <img src={heroImage} alt="statistics" className={css.heroImage} />
+        <img
+          src={heroImage}
+          alt="statistics"
+          className={css.heroImage}
+          data-aos="zoom-out"
+        />
         <div className={css.heroTitleContainer}>
-          <h1 className={css.heroTitle}>
+          <h1 className={css.heroTitle} data-aos="zoom-out">
             моментально Копируй сделки профи трейдеров
           </h1>
           <p className={css.heroDescription}>

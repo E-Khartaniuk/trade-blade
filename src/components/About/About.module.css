@@ -21,7 +21,7 @@
   line-height: 36px; /* 128.571% */
   letter-spacing: -1.12px;
   text-transform: uppercase;
-  z-index: 2;
+  z-index: 4;
 }
 .description {
   color: #030718;

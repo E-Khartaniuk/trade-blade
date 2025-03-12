@@ -11,8 +11,8 @@ function PastTransactions() {
         <p className={css.status}>Онлайн</p>
 
         <ul className={css.transactionsList}>
-          {data.map((item) => (
-            <li className={css.transactionsItem}>
+          {data.map((item, index) => (
+            <li className={css.transactionsItem} key={index}>
               <div className={css.itemBackgroundLogo}></div>
               <h3 className={css.currencyPair}>{item.pair}</h3>
               <p className={css.currencyPairTime}>SPOT · 1 мин. назад</p>

@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import css from "./PriceCardStandart.module.css";
 import CheckMark from "../../img/CheckMark";
+
 function PriceCardStandart() {
   const [isOpen, setIsOpen] = useState(false);
   const [value, setIsValue] = useState("12 месяцев");
   return (
-    <div className={css.priceVariantContainer}>
+    <div
+      className={css.priceVariantContainer}
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-anchor-placement="top-bottom">
       <h3 className={css.priceTitle}>STANDART</h3>
       <ul className={css.advantagesList}>
         <li className={css.advantagesListItem}>

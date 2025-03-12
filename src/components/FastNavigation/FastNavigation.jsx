@@ -12,23 +12,23 @@ function FastNavigation() {
               Цифры
             </a>
           </li>
-          <li lassName={css.navListItem}>
+          <li className={css.navListItem}>
             <a href="#pastTransactions" className={css.navListLink}>
               Сделки онлайн
             </a>
           </li>
-          <li lassName={css.navListItem}>
+          <li className={css.navListItem}>
             <a href="#about" className={css.navListLink}>
               о компании
             </a>
           </li>
 
-          <li lassName={css.navListItem}>
+          <li className={css.navListItem}>
             <a href="#price" className={css.navListLink}>
               тарифы
             </a>
           </li>
-          <li lassName={css.navListItem}>
+          <li className={css.navListItem}>
             <a href="#questions" className={css.navListLink}>
               FAQ
             </a>

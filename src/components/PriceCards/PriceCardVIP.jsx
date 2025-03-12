@@ -5,7 +5,11 @@ function PriceCardVIP() {
   const [isOpen, setIsOpen] = useState(false);
   const [value, setIsValue] = useState("12 месяцев");
   return (
-    <div className={css.priceVariantContainer}>
+    <div
+      className={css.priceVariantContainer}
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-anchor-placement="top-bottom">
       <h3 className={css.priceTitle}>VIP</h3>
       <ul className={css.advantagesList}>
         <li className={css.advantagesListItem}>

@@ -1,3 +1,4 @@
+import Aos from "aos";
 import "./App.css";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
@@ -9,6 +10,11 @@ import Price from "./components/Price/Price";
 import Questions from "./components/Questions/Questions";
 
 function App() {
+  Aos.init({
+    duration: 1000, // Время анимации
+    easing: "ease-in-out", // Тип анимации
+    once: true, // Анимация сработает только один раз
+  });
   return (
     <>
       <Header />
