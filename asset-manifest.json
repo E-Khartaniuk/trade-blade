@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/trade-blade/static/css/main.a373fdc8.css",
-    "main.js": "/trade-blade/static/js/main.2ce5768d.js",
+    "main.css": "/trade-blade/static/css/main.5c31680a.css",
+    "main.js": "/trade-blade/static/js/main.d3904026.js",
     "static/js/453.e1c834cf.chunk.js": "/trade-blade/static/js/453.e1c834cf.chunk.js",
     "static/media/heroImg.png": "/trade-blade/static/media/heroImg.f719a362b3bfeaba304d.png",
     "static/media/footerLogo.png": "/trade-blade/static/media/footerLogo.bb3f7c8ba83a0f286ffc.png",
@@ -14,12 +14,12 @@
     "static/media/menuArrow.svg": "/trade-blade/static/media/menuArrow.cbbc103c33088e0cfea6.svg",
     "static/media/desktopplug.svg": "/trade-blade/static/media/desktopplug.014a0ba2083ec9232ee8.svg",
     "static/media/arrow.svg": "/trade-blade/static/media/arrow.cd6d0d17c809ef4fc3e3.svg",
-    "main.a373fdc8.css.map": "/trade-blade/static/css/main.a373fdc8.css.map",
-    "main.2ce5768d.js.map": "/trade-blade/static/js/main.2ce5768d.js.map",
+    "main.5c31680a.css.map": "/trade-blade/static/css/main.5c31680a.css.map",
+    "main.d3904026.js.map": "/trade-blade/static/js/main.d3904026.js.map",
     "453.e1c834cf.chunk.js.map": "/trade-blade/static/js/453.e1c834cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a373fdc8.css",
-    "static/js/main.2ce5768d.js"
+    "static/css/main.5c31680a.css",
+    "static/js/main.d3904026.js"
   ]
 }
