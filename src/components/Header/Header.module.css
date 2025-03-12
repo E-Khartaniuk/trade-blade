@@ -164,8 +164,9 @@
   }
   .navMenu {
     position: relative;
+
     flex-direction: row;
-    gap: 82px;
+    gap: 0;
     justify-content: flex-end;
 
     padding: 0;
@@ -184,6 +185,7 @@
   }
 
   .navList {
+    width: fit-content;
     flex-direction: row;
     align-items: center;
     margin: 0;

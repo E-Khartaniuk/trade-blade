@@ -41,7 +41,7 @@ function Header() {
                   Цифры
                 </a>
               </li>
-              <li>
+              <li className={css.navListitem}>
                 <a
                   className={css.navLink}
                   href="#pastTransactions"
@@ -49,7 +49,7 @@ function Header() {
                   Сделки онлайн
                 </a>
               </li>
-              <li>
+              <li className={css.navListitem}>
                 <a
                   className={css.navLink}
                   href="#about"
@@ -57,7 +57,7 @@ function Header() {
                   О компании
                 </a>
               </li>
-              <li>
+              <li className={css.navListitem}>
                 <a
                   className={css.navLink}
                   href="#price"
@@ -66,7 +66,7 @@ function Header() {
                 </a>
               </li>
 
-              <li>
+              <li className={css.navListitem}>
                 <a
                   className={css.navLink}
                   href="#questions"
